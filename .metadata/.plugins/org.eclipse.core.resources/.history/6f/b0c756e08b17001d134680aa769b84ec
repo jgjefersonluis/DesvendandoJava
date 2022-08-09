@@ -1,0 +1,10 @@
+package com.java.juros.simples;
+
+public class CalculoJurosSimples {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

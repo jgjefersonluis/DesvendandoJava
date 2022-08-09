@@ -1,0 +1,18 @@
+package com.java.juros.simples;
+
+public class CalculoJurosSimples {
+
+	public static void main(String[] args) {
+		int prestacoes = 6;
+		double jurosMensal = 0.02;
+		double valorEmprestado = 1000.00;
+		double jurosPeriodo = prestacoes * jurosMensal;
+		double valorTotal = valorEmprestado * (1 + jurosPeriodo);
+		double valorJuros = valorTotal - valorEmprestado;
+		double valorParcela = valorTotal /prestacoes;
+		
+				
+
+	}
+
+}
