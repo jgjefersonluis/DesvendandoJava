@@ -1,0 +1,7 @@
+package com.java.conta;
+
+public class Conta {
+	public int inteiro;
+	public double saldo;
+
+}

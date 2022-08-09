@@ -1,0 +1,23 @@
+package com.java.conta;
+
+public class TesteConta {
+
+	public static void main(String[] args) {
+		Conta conta1 = new Conta();
+		conta1.numero = 10;
+		conta1.saldo = 500;
+		System.out.println(conta1);
+		System.out.println("Conta: " + conta1.numero);
+		System.out.println("Saldo: " + conta1.saldo);
+		
+		Conta conta2 = new Conta();
+		conta2.numero = 10;
+		conta2.saldo = 500;
+		System.out.println(conta2);
+		System.out.println("Conta: " + conta2.numero);
+		System.out.println("Saldo: " + conta2.saldo);
+		
+
+	}
+
+}
