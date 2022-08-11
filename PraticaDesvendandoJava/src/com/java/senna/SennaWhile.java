@@ -1,0 +1,16 @@
+package com.java.senna;
+
+public class SennaWhile {
+
+	public static void main(String[] args) {
+		System.out.println("Números da Senna!");
+		int i = 1;
+		while (i <= 60) {
+			System.out.println(i + ",");
+			i++;
+		}
+		System.out.println();
+
+	}
+
+}
