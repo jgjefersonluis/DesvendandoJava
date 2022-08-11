@@ -1,0 +1,10 @@
+package com.java.senna;
+
+public class SennaDoWhile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
