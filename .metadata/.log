@@ -455,3 +455,32 @@ Java Model Exception: Java Model Status [Unknown javadoc format for System {key=
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
 !SUBENTRY 1 org.eclipse.jdt.core 4 1009 2022-08-11 12:41:46.732
 !MESSAGE Unknown javadoc format for System {key=Ljava/lang/System;} [in System.class [in java.lang [in C:\Program Files\Java\jre1.8.0_231\lib\rt.jar]]]
+
+!ENTRY org.eclipse.ltk.core.refactoring 4 10009 2022-08-11 13:37:04.460
+!MESSAGE Participant 'org.eclipse.jpt.jpa.core.ltk.jpaMoveTypeParticipant' removed due to the following exception
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.eclipse.jpt.common.core.anyFacetedReferencingProjects to type class org.eclipse.core.internal.resources.File
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:70)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AdaptExpression.evaluate(AdaptExpression.java:106)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:72)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:53)
+	at org.eclipse.ltk.internal.core.refactoring.ParticipantDescriptor.matches(ParticipantDescriptor.java:76)
+	at org.eclipse.ltk.core.refactoring.participants.ParticipantExtensionPoint.getParticipants(ParticipantExtensionPoint.java:93)
+	at org.eclipse.ltk.core.refactoring.participants.ParticipantManager.loadMoveParticipants(ParticipantManager.java:121)
+	at org.eclipse.jdt.internal.corext.refactoring.reorg.MoveModifications.loadParticipants(MoveModifications.java:166)
+	at org.eclipse.jdt.internal.corext.refactoring.reorg.ReorgPolicyFactory$ReorgPolicy.loadParticipants(ReorgPolicyFactory.java:3557)
+	at org.eclipse.jdt.internal.corext.refactoring.reorg.JavaMoveProcessor.loadParticipants(JavaMoveProcessor.java:278)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.checkFinalConditions(ProcessorBasedRefactoring.java:233)
+	at org.eclipse.ltk.core.refactoring.CheckConditionsOperation.run(CheckConditionsOperation.java:85)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:121)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:209)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2022-08-11 13:37:04.460
+!MESSAGE No property tester contributes a property org.eclipse.jpt.common.core.anyFacetedReferencingProjects to type class org.eclipse.core.internal.resources.File
